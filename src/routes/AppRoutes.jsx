@@ -18,6 +18,8 @@ const AppRoutes = () => {
     <Route path="/register" element={<Register />} />
     <Route path="/login" element={<Login />} />
     <Route path='/' element={<PrivateRoute element={<Home/>}/>}/>
+    <Route path='/shop' element={<PrivateRoute element={<Home/>}/>}/>
+    <Route path='/collections' element={<PrivateRoute element={<Home/>}/>}/>
     
     </Routes>
     </BrowserRouter>
