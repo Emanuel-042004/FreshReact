@@ -32,7 +32,7 @@ const Login = () => {
         setSuccess('Login exitoso');
         setFormData({ email: '', password: '' });
         localStorage.setItem('user', JSON.stringify(user));
-        navigate('/home');
+        navigate('/');
       } else {
         setError('Correo o contraseña incorrectos');
         setSuccess(''); 
