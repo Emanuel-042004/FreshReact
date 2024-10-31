@@ -35,7 +35,7 @@ const Crud = () => {
     setNewCollection({ ...newCollection, [name]: value });
   };
 
-// Agregar nuevo plato
+// Agregar nuevo collection
 const handleAddCollection = async () => {
   if (!newCollection.nombre || !newCollection.descripcion || !newCollection.tallas || !newCollection.precio || !newCollection.imagen_1 || !newCollection.imagen_2 || !newCollection.imagen_3 || !newCollection.imagen_4) {
     alert('Todos los campos son obligatorios.');
@@ -62,14 +62,18 @@ const handleAddCollection = async () => {
 };
 
 
-  // Eliminar plato
+  // Eliminar collection
   const handleDeleteCollection = async (id) => {
-    const deleteUrl = `${urlCollections}/${id}`;
-    await DeleteData(deleteUrl);
-    setCollections(collections.filter((collection) => collection.id !== id)); 
+    const confirmation = window.confirm("¿Estás seguro de que deseas eliminar esta colección?");
+    
+    if (confirmation) {
+      const deleteUrl = `${urlCollections}/${id}`;
+      await DeleteData(deleteUrl);
+      setCollections(collections.filter((collection) => collection.id !== id));
+      alert("Colección eliminada exitosamente");
+    }
   };
-
-  // Editar plato
+  // Editar collection
   const handleEditCollection = (collection) => {
     setEditing(true);
     setCurrentCollection(collection);
@@ -192,7 +196,7 @@ const handleAddCollection = async () => {
           )}
         </div>
 
-        {/* Lista de platos */}
+        {/* Lista de collections */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', flex: '2 1 700px' }}>
           {collections.map((collection) => (
             <div key={collection.id} style={{ flex: '30px', minWidth: '250px', }}>

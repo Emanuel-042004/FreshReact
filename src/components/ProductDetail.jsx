@@ -1,6 +1,6 @@
-//eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { GetData } from '../helpers/peticiones';
 import { Box, Button, Typography, Select, MenuItem } from '@mui/material';
 import styled from 'styled-components';
@@ -10,7 +10,9 @@ import Navbar from './Navbar';
 const ProductDetail = () => {
   const { id } = useParams(); 
   const [product, setProduct] = useState(null);
+  const [cantidad, setCantidad] = useState(1); // Estado para la cantidad del producto
   const urlProduct = `http://localhost:3000/collection/${id}`; 
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -20,21 +22,33 @@ const ProductDetail = () => {
     fetchProduct();
   }, [id, urlProduct]);
 
+  // Función para agregar al carrito
   const addToCart = () => {
+    const user = localStorage.getItem('user'); 
 
+    if (!user) {
+      alert("Debes iniciar sesión para agregar al carrito");
+      navigate('/login'); 
+      return;
+    }
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const productToAdd = {
       id: product.id,
       nombre: product.nombre,
       precio: product.precio,
       imagen: product.imagen_1,
-      cantidad: 1, 
+      cantidad: cantidad, // Usar la cantidad seleccionada
     };
 
-    cart.push(productToAdd);
+    const existingProduct = cart.find(item => item.id === productToAdd.id);
 
-    localStorage.setItem('cart', JSON.stringify(cart));
+    if (existingProduct) {
+      existingProduct.cantidad += cantidad; // Aumenta la cantidad si ya está en el carrito
+    } else {
+      cart.push(productToAdd); // Añade el producto si no está
+    }
 
+    localStorage.setItem('cart', JSON.stringify(cart)); // Guarda en localStorage
     alert("Producto añadido al carrito");
   };
 
@@ -42,7 +56,7 @@ const ProductDetail = () => {
 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <Container>
         <ThumbnailContainer>
           {[product.imagen_1, product.imagen_2, product.imagen_3, product.imagen_4].map((image, index) => (
@@ -59,8 +73,8 @@ const ProductDetail = () => {
           
           <SizeSelector>
             <Typography variant="body1">Size</Typography>
-            <Select defaultValue="M">
-              {["S", "M", "L", "XL", "XXL"].map((size) => (
+            <Select value={cantidad} onChange={(e) => setCantidad(e.target.value)}>
+              {["S", "M", "L", "XL", "XXL"].map((size) => ( // Ajusté los tamaños a cantidades
                 <MenuItem key={size} value={size}>{size}</MenuItem>
               ))}
             </Select>
@@ -79,7 +93,6 @@ const ProductDetail = () => {
 };
 
 export default ProductDetail;
-
 
 const Container = styled(Box)`
   display: flex;
