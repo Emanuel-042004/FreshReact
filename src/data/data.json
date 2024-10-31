@@ -1,0 +1,131 @@
+{
+  "collection": [
+    {
+      "id": "1",
+      "nombre": "Crown Sweatshirt 2",
+      "descripcion": "Let them know you’re 90s royalty with this official The Fresh Prince crown pattern sweater. Throw vintage vibes that Uncle Phil would approve of. Featuring woven The Fresh Prince logo on chest. Navy crown print crew neck sweatshirt with white ribbed collar and waist band. Cotton/Poly blend.",
+      "tallas": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "precio": "805",
+      "imagen_1": "https://www.mammothmountainstore.com/cdn/shop/files/MMC013-BLACK.png?v=1720027265",
+      "imagen_2": "https://www.mammothmountainstore.com/cdn/shop/files/MMC013-BLACK-BACK.png?v=1720027265&width=493",
+      "imagen_3": "https://www.mammothmountainstore.com/cdn/shop/files/MMC013-ARMY_f32f95ba-14e9-46f8-bd9b-7045208f58b5.png?v=1720733692",
+      "imagen_4": "https://www.mammothmountainstore.com/cdn/shop/files/MMC013-ARMY-BACK.png?v=1720733803"
+    },
+    {
+      "id": "2",
+      "nombre": "Fresh Stripe Sweater",
+      "descripcion": "Let them know you’re 90s royalty with this official The Fresh Prince crown pattern sweater. Throw vintage vibes that Uncle Phil would approve of. Featuring woven The Fresh Prince logo on chest. Navy crown print crew neck sweatshirt with white ribbed collar and waist band. Cotton/Poly blend.",
+      "tallas": "S,M,L,XL",
+      "precio": 85,
+      "imagen_1": "https://shopresurrection.com/cdn/shop/files/IMG_9749.jpg?v=1700094697&width=1000",
+      "imagen_2": "https://shopresurrection.com/cdn/shop/files/IMG_9750_1.jpg?v=1700094696&width=1000",
+      "imagen_3": "https://shopresurrection.com/cdn/shop/files/IMG_9751.jpg?v=1700094697&width=1000",
+      "imagen_4": "https://shopresurrection.com/cdn/shop/files/IMG_9752_1.jpg?v=1700094696&width=1000"
+    },
+    {
+      "id": "3",
+      "nombre": "Fresh Black Tie-Dye Hoodie",
+      "descripcion": "Let them know you’re 90s royalty with this official The Fresh Prince crown pattern sweater. Throw vintage vibes that Uncle Phil would approve of. Featuring woven The Fresh Prince logo on chest. Navy crown print crew neck sweatshirt with white ribbed collar and waist band. Cotton/Poly blend.",
+      "tallas": "S,M,L,XL",
+      "precio": 75,
+      "imagen_1": "https://cdn11.bigcommerce.com/s-mplfu2e611/images/stencil/640w/products/39028/41504/black-tie-dye-hoodie-4__15303.1666806081.jpg?c=1",
+      "imagen_2": "https://cdn11.bigcommerce.com/s-mplfu2e611/images/stencil/640w/products/39028/43983/black-tie-dye-hoodie-1__73346.1666806124.jpg?c=1",
+      "imagen_3": "https://cdn11.bigcommerce.com/s-mplfu2e611/images/stencil/640w/products/39028/47397/black-tie-dye-hoodie-2__05968.1666806183.jpg?c=1",
+      "imagen_4": "https://cdn11.bigcommerce.com/s-mplfu2e611/images/stencil/640w/products/39028/48402/black-tie-dye-hoodie-5__11540.1666806200.jpg?c=1"
+    },
+    {
+      "id": "4",
+      "nombre": "Pose For It Tee",
+      "descripcion": "Let them know you’re 90s royalty with this official The Fresh Prince crown pattern sweater. Throw vintage vibes that Uncle Phil would approve of. Featuring woven The Fresh Prince logo on chest. Navy crown print crew neck sweatshirt with white ribbed collar and waist band. Cotton/Poly blend.",
+      "tallas": "S,M,L,XL",
+      "precio": 45,
+      "imagen_1": "https://images.lovingsquad.com/2024/05/The-Boys-Hughie-Campbell-pose-tshirt.jpg",
+      "imagen_2": "https://images.lovingsquad.com/2024/05/The-Boys-Hughie-Campbell-pose-hoddie.jpg",
+      "imagen_3": "https://images.lovingsquad.com/2024/05/The-Boys-Hughie-Campbell-pose-ladies.jpg",
+      "imagen_4": "https://images.lovingsquad.com/2024/05/The-Boys-Hughie-Campbell-pose-sweater.jpg"
+    },
+    {
+      "id": "5",
+      "nombre": "Retro Fresh Prince Tee",
+      "descripcion": "Step back into the 90s with this retro-inspired Fresh Prince tee. Featuring iconic colors and graphics, it's a must-have for any fan of the show.",
+      "tallas": "S,M,L,XL",
+      "precio": 50,
+      "imagen_1": "https://i.ebayimg.com/images/g/paYAAOSwj-JhYRdE/s-l1600.webp",
+      "imagen_2": "https://i.ebayimg.com/images/g/9K0AAOSwJzFhYRdG/s-l960.webp",
+      "imagen_3": "https://i.ebayimg.com/images/g/RZwAAOSwXLthYRdH/s-l960.webp",
+      "imagen_4": "https://i.ebayimg.com/images/g/beQAAOSwbwdhYRdI/s-l960.webp"
+    },
+    {
+      "id": "6",
+      "nombre": "Bel-Air Basketball Jersey",
+      "descripcion": "Rep the Bel-Air Academy with this classic basketball jersey, designed for fans of the Fresh Prince and vintage sportswear.",
+      "tallas": "S,M,L,XL",
+      "precio": 90,
+      "imagen_1": "https://visiblyblack.com/cdn/shop/products/BelAirAcademy_810x.png?v=1592843829",
+      "imagen_2": "https://visiblyblack.com/cdn/shop/products/SmithJersey_679x.jpg?v=1592843797",
+      "imagen_3": "https://visiblyblack.com/cdn/shop/products/VB_490x.png?v=1592844088",
+      "imagen_4": "https://visiblyblack.com/cdn/shop/products/BA_458x.png?v=1592844103"
+    },
+    {
+      "id": "7",
+      "nombre": "Vintage Graffiti Hoodie",
+      "descripcion": "Show off your Fresh Prince pride with this graffiti-inspired hoodie. Perfect for a throwback look with a modern twist.",
+      "tallas": "S,M,L,XL",
+      "precio": 85,
+      "imagen_1": "https://www.emmabridess.com/cdn/shop/files/H083009-2.webp?v=1725519520&width=5000",
+      "imagen_2": "https://www.emmabridess.com/cdn/shop/files/H083009-4.webp?v=1725519520&width=5000",
+      "imagen_3": "https://www.emmabridess.com/cdn/shop/files/H083009-5.webp?v=1725519520&width=5000",
+      "imagen_4": "https://www.emmabridess.com/cdn/shop/files/H083009-7.webp?v=1725519520&width=5000"
+    },
+    {
+      "id": "8",
+      "nombre": "Royalty Snapback Cap",
+      "descripcion": "Complete your Fresh Prince collection with this snapback cap featuring a crown emblem. Perfect for a cool, casual look.",
+      "tallas": "One Size",
+      "precio": 35,
+      "imagen_1": "https://cdn.shoplightspeed.com/shops/622617/files/66122354/primitive-royalty-hat.jpg",
+      "imagen_2": "https://cdn.shoplightspeed.com/shops/622617/files/66122363/primitive-royalty-hat.jpg",
+      "imagen_3": "https://cdn.shoplightspeed.com/shops/622617/files/66122377/primitive-royalty-hat.jpg",
+      "imagen_4": "https://cdn.shoplightspeed.com/shops/622617/files/66122354/primitive-royalty-hat.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "69",
+      "name": "Administrator",
+      "email": "Administrator@gmail.com",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "70",
+      "name": "Administrator2",
+      "email": "Administrator2@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "71",
+      "name": "usuario",
+      "email": "usuario@gmail.com",
+      "password": "1234567"
+    },
+    {
+      "id": "72",
+      "name": "usuario2",
+      "email": "usuario2@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "2864",
+      "name": "Miguel Angel",
+      "email": "malemus479@gmail.com",
+      "password": "1234",
+      "role": "admin"
+    }
+  ]
+}
